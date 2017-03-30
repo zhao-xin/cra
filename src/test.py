@@ -7,8 +7,9 @@ import time
 
 class seleniumTest(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome('C:\Users\home\PycharmProjects\chromedriver')
-        # self.driver = webdriver.PhantomJS()
+        # self.driver = webdriver.Chrome('C:\Users\home\PycharmProjects\chromedriver')
+        # self.driver = webdriver.Chrome('/Users/uqxzhao1/Documents/python/chromedriver')
+        self.driver = webdriver.PhantomJS('/Users/uqxzhao1/Documents/python/phantomjs-2.1.1-macosx/bin/phantomjs')
     def testEle(self):
         driver = self.driver
         driver.get('http://www.douyu.com/directory/all')
@@ -17,7 +18,7 @@ class seleniumTest(unittest.TestCase):
             titles = soup.find_all('h3', {'class': 'ellipsis'})
             nums = soup.find_all('span', {'class': 'dy-num fr'})
             for title, num in zip(titles, nums):
-                print title.get_text(), num.get_text()
+                print(title.get_text(), num.get_text())
             if driver.page_source.find('shark-pager-disable-next') != -1:
                 break
             elem = driver.find_element_by_class_name('shark-pager-next')
@@ -33,7 +34,7 @@ class seleniumTest(unittest.TestCase):
             time.sleep(1)
 
     def tearDown(self):
-        print 'down'
+        print('down')
 
 if __name__ == "__main__":
     unittest.main()

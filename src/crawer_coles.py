@@ -8,8 +8,9 @@ import sys
 wb = Workbook()
 ws = wb.active
 
-driver = webdriver.Chrome('C:\Users\home\PycharmProjects\chromedriver')
-# driver = webdriver.PhantomJS()
+# driver = webdriver.Chrome('C:\Users\home\PycharmProjects\chromedriver')
+driver = webdriver.Chrome('/Users/uqxzhao1/Documents/python/chromedriver')
+# driver = webdriver.PhantomJS('/Users/uqxzhao1/Documents/python/phantomjs-2.1.1-macosx/bin/phantomjs')
 
 date = time.strftime("%Y%m%d")
 print(date)
