@@ -24,8 +24,8 @@ urls = {
         '/a/a-national/specials/browse/pantry/jams--honey-spreads/honey-3694611?pageNumber=1': 'Honey',
         '/a/a-national/specials/browse/pantry/coffee-3116064?pageNumber=1':'Coffee',
         '/a/a-national/specials/browse/pantry/confectionery?pageNumber=1': 'Confectionery',
-        '/a/a-national/everything/browse/pantry/oils-vinegars/oil?pageNumber=1': 'Oil',
-        '/a/a-national/everything/browse/pantry/canned-foods--soups-noodles/fish-seafood?pageNumber=1': 'Fish/Seafood'
+        '/a/a-national/specials/browse/pantry/oils-vinegars/oil?pageNumber=1': 'Oil',
+        '/a/a-national/specials/browse/pantry/canned-foods--soups-noodles/fish-seafood?pageNumber=1': 'Fish/Seafood'
         }
 
 def getPage(url):
