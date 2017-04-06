@@ -53,7 +53,7 @@ def getProduct(category):
             size = 0
         try:
             qty = '1'
-            price = str(prod.find('span', 'pricingContainer-priceAmount').getText())
+            price = str(prod.find('span', attrs={'class': re.compile(r".*\bpricingContainer-priceAmount\b.*")}).getText())
         except:
             continue
         try:
